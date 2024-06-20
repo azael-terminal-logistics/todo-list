@@ -12,13 +12,18 @@ Desarrollar una aplicación web avanzada de TODO List con autenticación de
 usuarios, gestión de tareas, y funcionalidades avanzadas.
 
 ## Descripcion de environment
-APP_PORT: puerto en que se ejecutara el proyecto; por ejemplo 3000
-MYSQL_HOST: host de mysql; por ejemplo localhost
-MYSQL_PORT: puerto en que se ejecuta mysql: 3306
-MYSQL_USER: usuario con el que se conecta mysql; por ejemplo root
-MYSQL_PASSWORD: contraseña del usuario de mysql
-MYSQL_DATABASE: base de datos del proyecto
-JWT_KEY: token de jwt
+- APP_PORT: puerto en que se ejecutara el proyecto; por ejemplo 3000
+- MYSQL_HOST: host de mysql; por ejemplo localhost
+- MYSQL_PORT: puerto en que se ejecuta mysql: 3306
+- MYSQL_USER: usuario con el que se conecta mysql; por ejemplo root
+- MYSQL_PASSWORD: contraseña del usuario de mysql
+- MYSQL_DATABASE: base de datos del proyecto
+- JWT_KEY: token de jwt
 
 ## Installacion
-- CREATE DATABASE `todo_list` /*!40100 COLLATE 'utf8mb4_general_ci' */
+- Primero crea la base de datos en mysql
+
+```CREATE DATABASE `todo_list` /*!40100 COLLATE 'utf8mb4_general_ci' */```
+
+- luego en la raiz del proyecto ejecuta ```npm run start``` para iniciar el proyecto
+<small><br><b>Importante:</b> la primera vez que se ejecute va a crear las tablas y las relaciones en caso de no existir</small>
